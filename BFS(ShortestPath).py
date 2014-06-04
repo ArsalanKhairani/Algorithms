@@ -1,5 +1,15 @@
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                          Breadth First Search                              ##
+##                            Shortest Path                                   ##
+##                                                                            ##
+## Computes shortest path from one point to another using BFS. Built-in Queue ##
+## is used                                                                    ##
+################################################################################
+
 from queue import *
 
+# Function: Print shortest path of the graph given the starting vertex s.
 def BFS(graph, s):
     explored = { i:False for i in graph.keys() }
     explored[s] = True

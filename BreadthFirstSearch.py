@@ -1,5 +1,12 @@
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                          Breadth First Search                              ##
+##                                                                            ##
+## Breadth first graph searching algorithm. Built-in Queue is used            ##
+################################################################################
 from queue import *
 
+# Function: Search all the nodes of the graph given the starting vertex s.
 def BFS(graph, s):
     explored = { i:False for i in graph.keys()}
     explored[s] = True

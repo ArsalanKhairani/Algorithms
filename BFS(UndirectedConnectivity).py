@@ -1,6 +1,12 @@
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                          Breadth First Search                              ##
+##                         Undirected Connectivity                            ##
+## Application of BFS to compute undirected connectivity of the graph         ##
+################################################################################
 from queue import *
 
-# count will show how many pieces are there in the graph
+# Function: Find all the connected components from the all the nodes
 def connectedComponents(G):
     global explored
     count = 0
@@ -10,7 +16,7 @@ def connectedComponents(G):
             count += 1
     print (count)
 
-
+# Function: Search all the nodes of the graph given the starting vertex s.
 def BFS(graph, s):
     global explored
     explored[s] = True

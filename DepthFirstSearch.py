@@ -1,5 +1,11 @@
-from queue import *
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                          Depth First Search                                ##
+##                                                                            ##
+## Depth first graph searching algorithm. Built-in List is used as stack      ##
+################################################################################
 
+# Function: Search all the nodes of the graph given the starting vertex s.
 def DFS(graph, s):
     explored = { i:False for i in graph.keys()}
     explored[s] = True
@@ -8,7 +14,6 @@ def DFS(graph, s):
     while not len(stack) == 0:
         v = stack.pop()
         for w in graph[v]:
-            print (str(v), str(w))
             if not explored[w]:
                 explored[w] = True
                 stack.append(w)

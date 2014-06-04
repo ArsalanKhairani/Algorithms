@@ -1,5 +1,11 @@
-from queue import *
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                      Recursive Depth First Search                          ##
+##                                                                            ##
+## Depth first graph searching algorithm. Built-in List is used as stack      ##
+################################################################################
 
+# Function: Search all the nodes of the graph given the starting vertex s.
 def DFS(graph, s):
     global explored
     explored[s] = True
