@@ -1,16 +1,70 @@
-# This is the programming question to find the total no of comparisions
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                   Quick sort using different pivots                        ##
+##                                                                            ##
+## This implementation shows the impact due to different pivots in quick sort ##
+## on no. of comparisions. Pivots chossen are left, right and median          ##
+################################################################################
 
+# records no of comparisions
 comparisions = 0
 
+# Function: Given an array with its left and right indices returns the position
+#           of pivot
+# First as pivot 162085
+# Last as pivot 164123
+# Median as pivot 138382
 def Partition(arr, left, right):
 
-    #pivot = arr[left]           # Make the first element from left the pivot
+    # For making left entry as pivot do nothing
+    # For making right entry as pivot uncomment next line:
+    #RightPivot(arr, left, right)
+    # For making medain as pivot uncomment next line:
+    MedianPivot(arr, left, right)
+    pivot = arr[left]
+    i = left + 1
+    
+    # This loop compare each entry with pivot
+    for j in range(left + 1, right + 1):
+        if arr[j] < pivot:
+            temp   = arr[j]
+            arr[j] = arr[i]
+            arr[i] = temp
+            i += 1
+            
+    arr[left]  = arr[i - 1]
+    arr[i - 1] = pivot
 
-    #pivot = arr[right]          # Make the last element the pivot
-    #temp = arr[left]            # Exchange first element to the last element
-    #arr[left] = arr[right]
-    #arr[right] = temp
+    # Returns the position of the pivot
+    return i - 1
+    
+# Function: Sort an array around the pivot
+def QuickSort(arr, start, end):
 
+    global comparisions
+
+    # base case
+    if (end - start) < 1:
+        return
+
+    # Choosing pivot method - Here
+    
+    # partition sub routine
+    pivot = Partition(arr, start, end)
+    comparisions += (end - start)
+    
+    # Call recursion
+    QuickSort(arr, start, pivot - 1)
+    QuickSort(arr, pivot + 1, end)
+
+    return
+
+def RightPivot(arr, left, right):
+    temp = arr[left]
+    arr[left] = arr[right]
+    arr[right] = temp
+
+def MedianPivot (arr, left, right):
     a = [0, 0, 0]
     a[0] = arr[left]             # Median of the three pivot
     a[1] = arr[right]
@@ -35,45 +89,6 @@ def Partition(arr, left, right):
         arr[right] = arr[left]
         arr[left] = temp
 
-    pivot = arr[left]
-    i = left + 1
-    
-    # This loop compare each entry with pivot
-    for j in range(left + 1, right + 1):
-        if arr[j] < pivot:
-            temp   = arr[j]
-            arr[j] = arr[i]
-            arr[i] = temp
-            i += 1
-            
-    arr[left]  = arr[i - 1]
-    arr[i - 1] = pivot
-
-    # Returns the position of the pivot
-    return i - 1
-    
-
-def QuickSort(arr, start, end):
-
-    global comparisions
-
-    # base case
-    if (end - start) < 1:
-        return
-
-    # Choosing pivot method - Here
-    
-    # partition sub routine
-    pivot = Partition(arr, start, end)
-    comparisions += (end - start)
-    
-    # Call recursion
-    QuickSort(arr, start, pivot - 1)
-    QuickSort(arr, pivot + 1, end)
-
-    return
-
-
 # Main
 file = open("QuickSort.txt")
 Array = []
@@ -82,7 +97,3 @@ for line in file:
 
 QuickSort(Array, 0, 9999)
 print (comparisions)
-
-# first as pivot 162085
-# last as pivot 164123
-# Median as pivot 138382

@@ -1,5 +1,12 @@
-# implementing QuickSort 8:31 12/16/2013
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                              Quick Sort                                    ##
+##                                                                            ##
+## Sort an array of integers using quick sort algorithm.                      ##
+################################################################################
 
+# Function: Given an array with its left and right indices returns the position
+#           of pivot
 def Partition(arr, left, right):
 
     pivot = arr[left]           # Make the first element from left the pivot
@@ -20,7 +27,7 @@ def Partition(arr, left, right):
     # Returns the position of the pivot
     return i - 1
     
-
+# Function: Sort an array around the pivot
 def QuickSort(arr, start, end):
 
     # base case
@@ -37,5 +44,3 @@ def QuickSort(arr, start, end):
     QuickSort(arr, pivot + 1, end)
 
     return (arr)
-
-    
