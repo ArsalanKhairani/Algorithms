@@ -1,6 +1,15 @@
-# Karatsuba Multiplication 4:34 pm
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                        Karatsuba Multiplication                            ##
+##                                                                            ##
+## Recursive Algorithm for multiplying two big integers.                      ##
+################################################################################
+
+# For ceil funciton
 import math
 
+# Function: Recursive function with base case when x and y are 1 digit number 
+# Example : 1234 * 5678 = 7006652
 def KaratsubaMultiplication (n, x, y):
 
     # Base Case
@@ -30,4 +39,4 @@ def KaratsubaMultiplication (n, x, y):
 
     return product
 
-print (KaratsubaMultiplication(4, 1234, 5678))      #7006652
+print (KaratsubaMultiplication(4, 1234, 5678))

@@ -1,6 +1,11 @@
-# Implementing merge sort 9:57
-# Implementing over list
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                              Merge Sort                                    ##
+##                                                                            ##
+## Divide and Conquer merge sort algorithm.                                   ##
+################################################################################
 
+# Function: Sort the array in two halfs from the mid
 def MergeSort(left, right, arr):
     
     # Base case
@@ -20,11 +25,14 @@ def MergeSort(left, right, arr):
     sort = Merge(leftTree, rightTree)
     return sort
 
+# Function: Merge two sub arrays
 def Merge(leftTree, rightTree):
     i = 0
     j = 0
     arr = []
+    
     for k in range(len(leftTree)+len(rightTree)):
+
         # In case of any one array is fully copied
         if i == len(leftTree):
             arr.append(rightTree[j])

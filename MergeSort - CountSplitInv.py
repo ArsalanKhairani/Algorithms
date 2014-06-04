@@ -1,5 +1,10 @@
-# Implementing merge sort with counting split conversions 7:03
-# Implemeting on primarly basis using list of list and an integer
+################################################################################
+##                  Copyright(c) Arsalan Khairani, 2014                       ##
+##                              Merge Sort                                    ##
+##                                                                            ##
+## Divide and Conquer merge sort algorithm. Integer to store inversions.      ##
+## File Input: Unordered Integer 1 to 10000                                   ##
+################################################################################
 
 def MergeSort(left, right, arr):
     
