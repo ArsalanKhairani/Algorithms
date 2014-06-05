@@ -94,6 +94,12 @@ Implementation of Algorithms and Data Structures
 		<td><em>None</em></td>
 		<td>Huffman's text compression algorithm. Works only with perfect sizes.</td>
   </tr>
+  <tr>
+  	<td>TowersOfHanoi.h</td>
+  	<td>Towers of Hanoi</td>
+  	<td><em>User Input</em></td>
+  	<td>Implementation of classic tower of hanoi recursive algorithm.</td>
+  </tr>
 </table>
 
 ##Implemented Data Structures
