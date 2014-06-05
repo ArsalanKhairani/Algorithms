@@ -1,6 +1,6 @@
 /*******************************************************************************
  *                  Copyright(c) Arsalan Khairani, 2014                        *
- *                          	Linked List                               	   *
+ *                          	Linked List                                    *
  *                            	Using Array                                    *
  *                                                                             *
  * Generic array implementation of the linked list. Using built-in C++ array.  *
