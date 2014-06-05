@@ -1,3 +1,10 @@
+/*******************************************************************************
+ *                  Copyright(c) Arsalan Khairani, 2014                        *
+ *                            Towers Of Hanoi                                  *
+ *                                                                             *
+ * Recursive algorithm for solving towers of hanoi. Using Linked-list as towers*
+ *******************************************************************************/
+
 #include <iostream>
 #include "ListStack.h"
 using namespace std;
