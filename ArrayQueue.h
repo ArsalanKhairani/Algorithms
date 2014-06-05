@@ -1,10 +1,10 @@
 /*******************************************************************************
  *                  Copyright(c) Arsalan Khairani, 2014                        *
- *                          	   Queue                                 	   *
+ *                          	   Queue                                       *
  *                            	Using Array                                    *
  *                                                                             *
- * Generic array implementation of Queue. 							 		   *
- * Based on Array List implementation. 										   *
+ * Generic array implementation of Queue. 				       *
+ * Based on Array List implementation. 					       *
  *******************************************************************************/
 
 #pragma once
