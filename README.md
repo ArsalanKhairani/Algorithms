@@ -2,6 +2,7 @@
 
 Implementation of Algorithms and Data Structures
 
+##Implemented Algorithms
 <table>
   <tr>
     <th>File Name</th>
@@ -87,4 +88,51 @@ Implementation of Algorithms and Data Structures
 	<td>SCC.txt</td>
 	<td>Using recursive DFS finds the strongly connected components of a directed graph</td>
   </tr>
+  <tr>
+	<td>HuffmanAlgorithm.h</td>
+	<td>Huffman's Algorithm</td>
+	<td><em>None</em></td>
+	<td>Huffman's text compression algorithm. Works only with perfect sizes.</td>
+  </tr>
+</table>
+
+##Implemented Data Structures
+<table>
+  <tr>
+    <th>File Name</th>
+    <th>Data Structure</th>
+    <th>Test Data</th>
+	<th>Description</th>
+  </tr>
+  <tr>
+    <th>ArrayList.h</th>
+    <th>Linked List using Array</th>
+    <th><em>None</em></th>
+	<th>Generic array implementation of the linked list. Using built-in C++ array.</th>
+  </tr>
+  <tr>
+    <th>ArrayQueue.h</th>
+    <th>Queue based on Array</th>
+    <th><em>None</em></th>
+	<th>Generic array implementation of Queue.</th>
+  </tr>
+  <tr>
+    <th>ArrayStack.h</th>
+    <th>Stack based on Array</th>
+    <th><em>None</em></th>
+	<th>Generic array implementation of Stack.</th>
+  </tr>
+  <tr>
+    <th>Heaps(Max).py</th>
+    <th>Max Heap</th>
+    <th><em>None</em></th>
+	<th>Implementation of max heap data structure using array</th>
+  </tr>
+  <tr>
+    <th>Heaps.py</th>
+    <th>Min Heap</th>
+    <th><em>None</em></th>
+	<th>Implementation of min heap data structure using array</th>
+  </tr>
+  
 </table>
