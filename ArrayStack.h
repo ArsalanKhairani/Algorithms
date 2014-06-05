@@ -1,10 +1,10 @@
 /*******************************************************************************
  *                  Copyright(c) Arsalan Khairani, 2014                        *
- *                          	   Stack                                 	   *
+ *                          	   Stack                                       *
  *                            	Using Array                                    *
  *                                                                             *
- * Generic array implementation of Stack. 							 		   *
- * Based on Array List implementation. 										   *
+ * Generic array implementation of Stack. 				       *
+ * Based on Array List implementation. 					       *
  *******************************************************************************/
 
 #pragma once
