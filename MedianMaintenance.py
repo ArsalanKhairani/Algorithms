@@ -6,6 +6,7 @@
 ################################################################################
 
 # Using two heaps a max and a min
+# Import these two libraries from Data structures folder
 from Heaps import HeapMin
 from HeapsMax import HeapMax
 

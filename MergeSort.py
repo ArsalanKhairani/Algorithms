@@ -50,4 +50,6 @@ def Merge(leftTree, rightTree):
             i+= 1
     return arr
 
-print (MergeSort (0, 4, [3, 4, 5, 6, 1]))
+a = {1:2, 4:1, 3:0}
+#b = MergeSort(0, 2, a.values())
+print (a)
