@@ -1,0 +1,8 @@
+title: Algorithms
+description: Implemention of Data Structures and Algorithms
+google_analytics: Arsalan Khairani
+show_downloads: true
+theme: jekyll-theme-dinky
+
+gems:
+  - jekyll-mentions
